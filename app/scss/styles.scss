@@ -1,0 +1,160 @@
+
+//    font-family: 'Padauk', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+//font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+//font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+$black: #333;
+$bg-img: 'https://i.pinimg.com/564x/a2/12/c6/a212c6112112100800c8e097bc2033a1.jpg';
+$pp-img: '/app/images/ppig2.png';
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //font-family: 'Padauk', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: $black;
+    color: snow;
+    //scroll-behavior: auto;
+    
+    }   
+
+body, html{
+    height: 100%;
+   // width: 100%;
+    margin: 0;
+        overflow: hidden;
+      
+    padding: 0;
+    }
+
+.square-container{
+//instagram stories uses a relation aspect of 9:16 that means that per 9 pixels 
+//there are 16 pixels of height, so on 480px we have 53 9s so 53 x 16 = 853 px
+
+    height: 853px;
+    width: 480px;
+    //background-color: slateblue;
+ //   background-position: center;
+    display: flex;
+//    justify-content: center;
+ //   align-items: center;
+    position: relative;
+    //  box-sizing: border-box;
+    background-image: url($bg-img);
+    background-size: cover;
+    z-index: -1;
+
+    
+}
+
+.pp{
+    background-image: url($pp-img);
+  //  background-size: cover;
+  //  height: 32px;
+  //  width: 32px;
+    //display: flex;
+   // position: relative;
+   // background-size: cover;
+   
+   top: 14px;
+   left: 10px;
+
+    height: 100%;
+    width: 10%;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    
+}
+
+.user{
+    top: 19px;
+    left: 50px;
+    position: absolute;
+    display: flex;
+}
+
+.bar{
+    background-color: white;
+    width: 476px;
+    height: 2.5px;
+    //top: 5px;
+    margin: 5px 2px 1px 2px;
+    position: absolute;
+    display: flex;
+}
+
+.options{
+
+    position: absolute;
+    z-index: 1; 
+    top: 19px;
+    right: 10px;
+   
+  
+    > span {
+        display: block;
+        width: 4px;
+        height: 4px;
+        background-color: white;
+       // transition: all 300ms ease-in-out;
+       // transform-origin: 3px 1px;
+        border-radius: 100%;
+
+        //propiedad aplicada a todos los que no sean ultimo hijo
+      &:not(:last-child){
+            margin-bottom: 3px;
+        }
+    }
+
+}
+
+.pub{
+    background-image: url($bg-img);
+    height: 400px;
+    width: 400px;
+    z-index: 99999;
+    position: absolute;
+    align-items: center;
+    //display: flex;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.pub::before{
+    content: "The college has been forgoten, but i know you have been in here for a while... mas";
+    display: block;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    height: 10%;
+    color: $black;
+    border-radius: 20px;
+    //height: 50px;
+    width: 90%;
+    //padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    //position: absolute;
+
+}
+
+.pub::after{
+    content: "where am i?";
+    color: white;
+    display: block;
+    background-color: white;
+    position: relative;
+    top: -20px;
+
+
+}
+
+
+
