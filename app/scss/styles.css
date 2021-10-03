@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #333;
+  color: snow;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.square-container {
+  height: 853px;
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-image: url("https://i.pinimg.com/564x/a2/12/c6/a212c6112112100800c8e097bc2033a1.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+
+.pp {
+  background-image: url("/app/images/ppig2.png");
+  top: 14px;
+  left: 10px;
+  height: 100%;
+  width: 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.user {
+  top: 19px;
+  left: 50px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar {
+  background-color: white;
+  width: 476px;
+  height: 2.5px;
+  margin: 5px 2px 1px 2px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.options {
+  position: absolute;
+  z-index: 1;
+  top: 19px;
+  right: 10px;
+}
+
+.options > span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.options > span:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.pub {
+  background-image: url("https://i.pinimg.com/564x/a2/12/c6/a212c6112112100800c8e097bc2033a1.jpg");
+  height: 400px;
+  width: 400px;
+  z-index: 99999;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5%;
+}
+
+.pub::before {
+  content: "The college has been forgoten, but i know you have been in here for a while... mas";
+  display: block;
+  background-color: white;
+  padding: 20px;
+  margin: 0;
+  height: 10%;
+  color: #333;
+  border-radius: 20px;
+  width: 90%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pub::after {
+  content: "where am i?";
+  color: white;
+  display: block;
+  background-color: white;
+  position: relative;
+  top: -20px;
+}
+/*# sourceMappingURL=styles.css.map */
