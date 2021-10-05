@@ -5,11 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 //font-family: 'Open Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-
+//font-family: 'Noto Sans Display', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@220&display=swap');
 
 $black: #333;
 $bg-img: 'https://i.pinimg.com/564x/a2/12/c6/a212c6112112100800c8e097bc2033a1.jpg';
-$pp-img: '/app/images/ppig2.png';
+$pp-img: '/images/ppig1.png';
+
+
 
 body {
     display: flex;
@@ -17,7 +20,7 @@ body {
     align-items: center;
     //font-family: 'Padauk', sans-serif;
     font-family: 'Roboto', sans-serif;
-    background-color: $black;
+    background-color:$black;
     color: snow;
     //scroll-behavior: auto;
     
@@ -27,7 +30,7 @@ body, html{
     height: 100%;
    // width: 100%;
     margin: 0;
-        overflow: hidden;
+    //overflow: hidden;
       
     padding: 0;
     }
@@ -104,7 +107,7 @@ body, html{
         background-color: white;
        // transition: all 300ms ease-in-out;
        // transform-origin: 3px 1px;
-        border-radius: 100%;
+        border-radius: 200%;
 
         //propiedad aplicada a todos los que no sean ultimo hijo
       &:not(:last-child){
@@ -118,7 +121,7 @@ body, html{
     background-image: url($bg-img);
     height: 400px;
     width: 400px;
-    z-index: 99999;
+    z-index: 100;
     position: absolute;
     align-items: center;
     //display: flex;
@@ -129,7 +132,7 @@ body, html{
 }
 
 .pub::before{
-    content: "The college has been forgoten, but i know you have been in here for a while... mas";
+    content: "The college has been forgoten, but I know you have been in here for a while... más";
     display: block;
     background-color: white;
     padding: 20px;
@@ -155,6 +158,42 @@ body, html{
 
 
 }
+
+.square-container::after{
+    content: "Enviar mensaje";
+    display: block;
+    color: white;
+    position: absolute;
+    bottom: 1em;
+    left: 15px;
+    //55px: send, width: 480px - 15px:left = 465-10x10:padding=445-10:?=440
+    width: 24.0625em;
+    //background-color: white;
+    border-color: #eee;
+    ;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 25px;
+    
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 11pt;
+    border-width: thin;
+
+}
+
+.dm{
+    position: absolute;
+    //display: block;
+    z-index: 200;
+    //top: 20px;
+    bottom: 0;
+    right: 0;
+    
+
+}
+
+
+
 
 
 
