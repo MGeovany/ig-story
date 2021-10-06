@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@220&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap");
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +40,7 @@ body, html {
 .pp {
   background-image: url("/images/ppig1.png");
   top: 14px;
-  left: 10px;
+  left: 15px;
   height: 100%;
   width: 10%;
   background-repeat: no-repeat;
@@ -48,7 +49,7 @@ body, html {
 
 .user {
   top: 19px;
-  left: 50px;
+  left: 55px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,21 +57,40 @@ body, html {
 }
 
 .bar {
-  background-color: white;
-  width: 476px;
+  background-color: darkgray;
+  width: 450px;
   height: 2.5px;
-  margin: 5px 2px 1px 2px;
+  margin: 5px 15px 1px 15px;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+.loadb {
+  width: 94%;
+  height: 2.5px;
+  margin: 5px 15px 1px 15px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation: loading 5s infinite;
+          animation: loading 5s infinite;
+}
+
+@-webkit-keyframes loading {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
 }
 
 .options {
   position: absolute;
   z-index: 1;
   top: 19px;
-  right: 10px;
+  right: 15px;
 }
 
 .options > span {
@@ -129,11 +149,11 @@ body, html {
   display: block;
   color: white;
   position: absolute;
-  bottom: 1em;
+  bottom: 15px;
   left: 15px;
-  width: 24.0625em;
+  right: 55px;
   border-color: #eee;
-  padding: 10px;
+  padding: 15px;
   border-style: solid;
   border-radius: 25px;
   font-family: 'Noto Sans Display', sans-serif;
@@ -142,9 +162,14 @@ body, html {
 }
 
 .dm {
+  background-image: url("/images/md-ig.png");
   position: absolute;
-  z-index: 200;
-  bottom: 0;
-  right: 0;
+  bottom: 30px;
+  right: 20px;
+  background-position: center;
+  background-size: contain;
+  width: 26px;
+  height: 23px;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=styles.css.map */
