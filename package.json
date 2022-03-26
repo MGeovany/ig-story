@@ -1,0 +1,27 @@
+{
+  "name": "ig-story",
+  "version": "1.0.0",
+  "description": "ig-story-clone",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MGeovany/ig-story.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Maarlon Geovany Castro Mejia <M_Geovany>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MGeovany/ig-story/issues"
+  },
+  "homepage": "https://github.com/MGeovany/ig-story#readme",
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
