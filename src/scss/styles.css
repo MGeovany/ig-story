@@ -5,18 +5,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@220&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap");
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #333;
   color: snow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body, html {
@@ -28,32 +22,61 @@ body, html {
 .square-container {
   height: 853px;
   width: 480px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   background-image: url("https://i.pinimg.com/564x/a2/12/c6/a212c6112112100800c8e097bc2033a1.jpg");
   background-size: cover;
   z-index: -1;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60px;
+}
+
+.bar-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+}
+
+.user-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 70%;
+}
+
+.pad {
+  width: 3%;
+  height: 100%;
 }
 
 .pp {
-  background-image: url("/images/ppig1.png");
-  top: 14px;
-  left: 15px;
-  height: 100%;
-  width: 10%;
+  background-image: url("https://fv9-3.failiem.lv/thumb_show.php?i=b7b8x2sx7&view");
+  width: 32px;
+  height: 32px;
   background-repeat: no-repeat;
-  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .user {
-  top: 19px;
-  left: 55px;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-left: 15px;
+  width: 40%;
+  cursor: pointer;
+}
+
+.pad2 {
+  width: 42%;
+  height: 100%;
 }
 
 .bar {
@@ -70,14 +93,7 @@ body, html {
   margin: 5px 15px 1px 15px;
   position: absolute;
   background-color: white;
-  -webkit-animation: loading 5s infinite;
-          animation: loading 5s infinite;
-}
-
-@-webkit-keyframes loading {
-  from {
-    width: 0%;
-  }
+  animation: loading 5s infinite;
 }
 
 @keyframes loading {
@@ -85,14 +101,9 @@ body, html {
     width: 0%;
   }
 }
-
 .options {
-  position: absolute;
   z-index: 1;
-  top: 19px;
-  right: 15px;
 }
-
 .options > span {
   display: block;
   width: 4px;
@@ -100,9 +111,15 @@ body, html {
   background-color: white;
   border-radius: 200%;
 }
-
 .options > span:not(:last-child) {
   margin-bottom: 3px;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
 }
 
 .pub {
@@ -110,15 +127,10 @@ body, html {
   height: 400px;
   width: 400px;
   z-index: 100;
-  position: absolute;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-position: center;
   background-size: cover;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border-radius: 5%;
 }
 
@@ -132,7 +144,7 @@ body, html {
   color: #333;
   border-radius: 20px;
   width: 90%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .pub::after {
@@ -156,13 +168,13 @@ body, html {
   padding: 15px;
   border-style: solid;
   border-radius: 25px;
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
   font-size: 11pt;
   border-width: thin;
 }
 
 .dm {
-  background-image: url("/images/md-ig.png");
+  background-image: url("https://i.ibb.co/gWxBX31/md-ig.png");
   position: absolute;
   bottom: 30px;
   right: 20px;
@@ -172,4 +184,5 @@ body, html {
   height: 23px;
   background-repeat: no-repeat;
 }
+
 /*# sourceMappingURL=styles.css.map */

@@ -12,23 +12,23 @@
 
 $black: #333;
 $bg-img: 'https://i.pinimg.com/564x/a2/12/c6/a212c6112112100800c8e097bc2033a1.jpg';
-$pp-img: '/images/ppig1.png';
-$md-ico: '/images/md-ig.png';
+$pp-img: 'https://fv9-3.failiem.lv/thumb_show.php?i=b7b8x2sx7&view';
+$md-ico: 'https://i.ibb.co/gWxBX31/md-ig.png';
 
 
 
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    //font-family: 'Padauk', sans-serif;
+
     font-family: 'Roboto', sans-serif;
     background-color:$black;
     color: snow;
-    //scroll-behavior: auto;
-    
-    }   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}   
 
 body, html{
     height: 100%;
@@ -55,35 +55,67 @@ body, html{
     background-image: url($bg-img);
     background-size: cover;
     z-index: -1;
+    flex-direction: column;
 
     
 }
+
+.top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+}
+
+.bar-sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    //justify-content: center;
+    width: 100%;
+    height: 30%;
+}
+.user-sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 70%;
+    
+}
+
+.pad{
+    width: 3%;
+    height: 100%;
+}
+
+
 
 .pp{
     background-image: url($pp-img);
-  //  background-size: cover;
-  //  height: 32px;
-  //  width: 32px;
-    //display: flex;
-   // position: relative;
-   // background-size: cover;
-   
-   top: 14px;
-   left: 15px;
-
-    height: 100%;
-    width: 10%;
-    background-repeat: no-repeat;
-    position: absolute;
-
     
+
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    
+    border-radius: 50%;
+    cursor: pointer;
+
 }
 
 .user{
-    top: 19px;
-    left: 55px;
-    position: absolute;
-    display: flex;
+    padding-left: 15px;
+    width: 40%;
+    cursor: pointer;
+
+
+}
+
+.pad2{
+    width: 42%;
+    height: 100%;
 }
 
 .bar{
@@ -115,11 +147,10 @@ body, html{
 
 .options{
 
-    position: absolute;
+   // position: absolute;
     z-index: 1; 
-    top: 19px;
-    right: 15px;
-   
+   // top: 19px;
+   // right: 15px;
   
     > span {
         display: block;
@@ -138,12 +169,20 @@ body, html{
 
 }
 
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 100px;
+
+}
+
 .pub{
     background-image: url($bg-img);
     height: 400px;
     width: 400px;
     z-index: 100;
-    position: absolute;
     align-items: center;
     //display: flex;
     background-position: center;
