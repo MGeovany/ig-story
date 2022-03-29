@@ -1,34 +1,16 @@
-/*!***********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/scss/styles.css ***!
-  \***********************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Padauk&display=swap);
-/*!***************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/scss/styles.css (1) ***!
-  \***************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap);
-/*!***************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/scss/styles.css (2) ***!
-  \***************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap);
-/*!***************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/scss/styles.css (3) ***!
-  \***************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@220&display=swap);
-/*!***************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/scss/styles.css (4) ***!
-  \***************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap);
-/*!***************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/scss/styles.css (5) ***!
-  \***************************************************************************/
 @charset "UTF-8";
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "Roboto", sans-serif;
   background-color: #333;
   color: snow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body, html {
@@ -45,23 +27,56 @@ body, html {
   background-image: url("https://i.pinimg.com/564x/a2/12/c6/a212c6112112100800c8e097bc2033a1.jpg");
   background-size: cover;
   z-index: -1;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60px;
+}
+
+.bar-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+}
+
+.user-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 70%;
+}
+
+.pad {
+  width: 3%;
+  height: 100%;
 }
 
 .pp {
   background-image: url("https://fv9-3.failiem.lv/thumb_show.php?i=b7b8x2sx7&view");
-  top: 14px;
-  left: 15px;
-  height: 100%;
-  width: 10%;
+  width: 32px;
+  height: 32px;
   background-repeat: no-repeat;
-  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .user {
-  top: 19px;
-  left: 55px;
-  position: absolute;
-  display: flex;
+  padding-left: 15px;
+  width: 40%;
+  cursor: pointer;
+}
+
+.pad2 {
+  width: 42%;
+  height: 100%;
 }
 
 .bar {
@@ -87,10 +102,7 @@ body, html {
   }
 }
 .options {
-  position: absolute;
   z-index: 1;
-  top: 19px;
-  right: 15px;
 }
 .options > span {
   display: block;
@@ -103,12 +115,18 @@ body, html {
   margin-bottom: 3px;
 }
 
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
 .pub {
   background-image: url("https://i.pinimg.com/564x/a2/12/c6/a212c6112112100800c8e097bc2033a1.jpg");
   height: 400px;
   width: 400px;
   z-index: 100;
-  position: absolute;
   align-items: center;
   background-position: center;
   background-size: cover;
@@ -156,7 +174,7 @@ body, html {
 }
 
 .dm {
-  background-image: url("https://fv9-5.failiem.lv/thumb_show.php?i=phdj6ehey&view");
+  background-image: url("https://i.ibb.co/gWxBX31/md-ig.png");
   position: absolute;
   bottom: 30px;
   right: 20px;
